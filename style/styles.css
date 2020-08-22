@@ -26,13 +26,14 @@ body {
   font-style: normal;
   font-weight: 400;
 }
-main {
+.main-content {
   background-color: var(--background-main-color);
 }
-a {
+.link {
   text-decoration: none;
 }
-ul {
+
+.list {
   list-style: none;
 }
 /* header */
@@ -47,29 +48,31 @@ header {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+ 
 }
 
 .studio {
   color: var(--black);
 }
-.site-nav a {
+.site-nav .link {
   color: var(--title-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
-a.current {
+.link.current {
   color: var(--accent-color);
 }
 
-.site-nav a:hover,
-.site-nav a:focus,
+.site-nav .link:hover,
+.site-nav .link:focus,
 address .contacts:hover,
 address .contacts:focus {
   color: var(--accent-color);
 }
-.contacts a {
+.contacts .link {
   color: var(--text-color);
 }
 /* hero */
@@ -101,12 +104,12 @@ address .contacts:focus {
   color: var(--background-main-color);
 }
 
-.features h3 {
+.features .subtitle {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.features .p {
+.features .paragraph {
   line-height: 1.7;
   color: var(--text-color);
 }
@@ -123,12 +126,12 @@ address .contacts:focus {
 .team {
   background-color: var(--baclground-team);
 }
-.team h3 {
+.team .subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
 }
-.team p {
+.team .paragraph {
   font-size: 16px;
   line-height: 1.2;
   color: var(--text-color);
@@ -170,12 +173,12 @@ button:focus {
   color: var(--title-color);
   letter-spacing: 0.06em;
 }
-.projects p {
+.projects .paragraph {
   font-size: 16px;
   line-height: 1.9;
   color: var(--text-color);
 }
 
-.box li{
+.box {
   background-color:var(--white);
 }
